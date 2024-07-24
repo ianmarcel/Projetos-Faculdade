@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Min2</title>
+</head>
+<body>
+    <h2>Sobre Mim</h2>
+    <ol>
+        {% for aluno, nota in notas.items() %}
+            <li>{{ aluno }}: {{ nota }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
