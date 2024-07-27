@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+    <style>
+        body{
+            background-color: khaki;
+        }
+        form{
+            border: solid 5px black;
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="headerPai">
+        <header>
+            Bem Vindo Estranho 
+         
+        </header>
+    
+        <nav>
+            <ul>
+                <a href="index.html" target ="">Pagina Inicial</a></li>
+                <li> <a href="#" target ="_blank">Sobre Min</a></li>
+                <li> <a href="#" target ="_blank">Projetos</a></li>
+                <li> <a href="#" target ="_blank">Contatos</a></li>
+                <li> <a href="#" target ="_blank">Login</a></li>
+                <li> <a href="cadastro.html" target ="_blank">Cadastro</a></li>
+    
+            </ul>
+        </nav>
+
+    </div>
+    <!-- N cheguei na parte de realmente testar um cadastro(É so em JS e tem ate validacao) -->
+    <h1 id="titulo_Cadastro">cadastro</h1>
+    <form name=form action="index.html" method="post">
+        <input type="text" name="usuario" placeholder="digite seu nome" value="ian"> nome <br/><br/>
+        <input type="password" name="senha" placeholder="digite uma senha" value="123"> senha <br/><br/>
+        <!-- validar a senha(uma coisa simples) -->
+        <input type="submit" value="Ok"></br>
+        <!-- Ai tu cria um pagina chamada lista de usuario E faz uma tabela(tr e th)No estilo q 
+             o hugo polenta fez(pegar por value)*Por enquanto salva por Json(acho q comeca por esse)-->
+    </form>
+</body>
+</html>

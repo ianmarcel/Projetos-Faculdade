@@ -1,0 +1,83 @@
+
+nav ul{ 
+    background-color: lightblue;
+     text-align: center;
+     
+ }
+ nav li{
+     display: inline;
+     font-size: large;
+     padding: 15px;
+ 
+ }
+ 
+ img{
+     padding: 15px;
+ }
+ 
+ .headerPai{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding: 20px;
+     background-color: blueviolet;
+ 
+ }
+ 
+ header{
+     /* text-align: center; */
+     font-size: xx-large;
+ }
+ 
+ 
+ .Section{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding: 5px;
+      align-items: center; 
+ }
+ 
+ main{
+     flex-basis: 70%;
+     flex-grow: 1;
+     background-color: lightpink;
+ }
+ 
+ #sidebar{
+     background-color: aqua;
+     flex-basis: 30%;
+     flex-grow: 1;
+      /* (Pra fazer a sideBar Sem Flex(Fica feio )) */
+     /* margin-left:  0px; */
+     /* width: 40%;
+     float: left; */
+ }
+ 
+ /* main{ SEM FLEX
+     /* display: flex;
+     flex-wrap: wrap; */
+                 /* display:inline-block;
+                 margin:  15px ; */
+     /* (Pra fazer a sideBar Sem Flex(Fica feio )) */
+     /* max-width: 60%;
+     background-color: lightyellow;
+     float: right; } 
+     */
+ 
+ footer{
+     background-color: lightgrey;
+ }
+ 
+ 
+ 
+ @media screen and (max-width : 600px){
+  body{
+     background-color: lightpink;
+  }
+  .headerPai{
+     /* position: fixed; Funciona mas ficou feio */
+     
+  }
+     
+ }
