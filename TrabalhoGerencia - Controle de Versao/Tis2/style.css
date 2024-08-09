@@ -1,0 +1,122 @@
+body{ 
+    /* dps muda pra * ou tira isso se der errado */
+    /* margin: 0;
+    padding: 0; */
+    background-color: #A19C96 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #970e0e; 
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+header a{
+    color: red;
+}
+
+header a:hover{
+    color: #FF0000;
+}
+
+header button{
+    height: 40px;
+    font: 600;
+}
+
+.Container{ 
+    display: grid;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    /* no lugar de grid-gap que ta obsoleto */
+    gap: 20px; 
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+article{
+    background-color: rgb(138, 6, 6);
+    /* width: 120px;  PARA N DAR ERRO COM O GRID-TEMPLETE-COLLUM*/
+    /* ta diferente pq tu n colocou padding 0 e margin 0 no bofy no tis2 como deveria */
+    /* margin-left: 50px; */
+    
+}
+article li{
+    color: YELLOW;
+}
+
+
+/*MAIN E CARROUSEL DE FILMES (PARTE DO MEIO)*/
+
+h2.passaOmouse:hover{ /*N precisava do h2 so o .passaOmouse:hover MAS é uma boa pratica --> PDF Linguagem CSS-Combinacao De Seletores 27/10/2020*/
+    color: hotpink;
+}
+h2{
+    color: red;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+  }
+.cards #card1{
+    grid-column: 1;
+    grid-row: 2;
+  
+  }
+.cards #card2{
+    grid-column: 2;
+    grid-row: 2;
+  
+  }
+.cards #card3{
+    grid-column: 3;
+    grid-row: 2;
+  
+  }
+
+  img{
+    /*27/10/2020 -MAS N SEI SE É O MELHOR JEITO*/
+    height: 200px;
+    width: 350px;
+}
+img.filmesPrincipais{
+    height: 400px;
+}
+
+.sugestao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*TBM FUNCIONA SE TU COPIAR O LAYOUT GRID*/
+ 
+ }
+
+.setas{
+    width: 100px;
+    height: 100px;
+}
+
+#Streming_Titulo{
+    color: rgb(12, 172, 12);
+    font-size: x-large;
+}
+
+aside{
+    background-color:  rgb(151, 14, 14);
+}
+aside li{
+    color: yellow;
+}
+
+footer{
+    background-color: darkgrey;
+}
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            background-color: khaki;
+        }
+        form{
+            margin: 0 auto;
+            margin-top: 100px;
+            /* border: solid 5px black; */
+            /* margin-left: 300px;
+            margin-right: 300px; */
+            background-color: cyan;
+            /* height: 500px; */
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+            
+        }
+
+        
+        form div + div {
+          margin-top: 1em;
+        }
+
+        /* select{
+            margin-top: 100px;
+            align-items: center;
+        } */
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- N cheguei na parte de realmente testar um cadastro(É so em JS e tem ate validacao) -->
+    <h1 id="titulo_Cadastro">cadastro</h1>
+    <form id="login" method="post" action="http://127.0.0.1:5000/Cadastro">
+        <input type="text" name="nome" placeholder="digite seu nome" id="nome"> NOME <br/><br/>
+        <input type="email" name="email" placeholder="digite uma email" id="email"> EMAIL <br/><br/>
+        <input type="password" name="senha" placeholder="digite uma senha" id="senha"> SENHA <br/><br/>
+        <input type="text" name="nascimento" placeholder="digite sua data de nascimento" id="nascimento"> DATA DE NASCIMENTO <br/><br/>
+        <input type="text" name="semana" value="7/12" id="semana" value="7/12"> SEMANA  <br/><br/>
+        <input type="text" name="telefone" placeholder="digite seu telefone" id="telefone"> TELEFONE <br/><br/>
+        <!-- <H2 style="color: black;text-decoration-color: black;">Generos de Filme Favorito</H2>  -->
+        <p>
+            <label for="generos"><h3>GENEROS DE FILMES PREFERIDOS</h3> </label>
+            <select id="generos"name="ngeneros">
+                <option value="ACAO">Acao</option>
+                <option value="COMEDIA">Comedia</option>
+                <option value="ROMANCE">romance</option>
+            </select>
+        </p>
+        <br/><br/>
+        <br/><br/>
+       
+
+       
+
+        <input type="submit" value="Ok" ></br>
+       <!-- DICAS PRA TU MELHORAR O SITE DO MOVIT -->
+            <!-- validar a senha(uma coisa simples) ######### DEPOIS N ESQUECE-->
+            <!-- Ai tu cria um pagina chamada lista de usuario E faz uma tabela(tr e th)No estilo q 
+                o hugo polenta fez(pegar por value)*Por enquanto salva por Json(acho q comeca por esse)-->
+                <!-- ERA PRA TREINO  -->
+                    <!-- <select>
+                    <option>teste1</option>
+                    <option>teste</option>
+                
+                    </select> -->
+ 
+            </form>
+
+
+</body>
+</html>
